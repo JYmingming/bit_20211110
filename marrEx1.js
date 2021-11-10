@@ -9,15 +9,13 @@ const arr = [
     [180,140,190]
 ]
 
-
 //가장 매출이 좋았던 분기
 //각 분기별 매출 평균을 만든다
 //그 중에서 최대 평균을 찾는다.
 
-let sum
 let temp = 0
 let avg = 0
-let temparr= []
+const temparr= []
 let tempavg = -1
 for (let i = 0; i < arr.length; i++) {
 
