@@ -18,15 +18,13 @@ let sum = 0
 const temparr= []
 let tempavg = -1
 for (let i = 0; i < arr.length; i++) {
-
     for (let j = 0; j < arr[i].length; j++) {
         sum = sum + arr[i][j]
-        
     }
     temparr[i] = sum/arr[i].length
     console.log((i+1) +"분기 평균: "+ temparr[i])
-
     sum = 0;
+
     if(tempavg<temparr[i]){
         tempavg = temparr[i]
     }
