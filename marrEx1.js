@@ -14,19 +14,19 @@ const arr = [
 //그 중에서 최대 평균을 찾는다.
 
 
-let temp = 0
+let sum = 0
 const temparr= []
 let tempavg = -1
 for (let i = 0; i < arr.length; i++) {
 
     for (let j = 0; j < arr[i].length; j++) {
-        temp = temp + arr[i][j]
+        sum = sum + arr[i][j]
         
     }
-    temparr[i] = temp/arr[i].length
+    temparr[i] = sum/arr[i].length
     console.log((i+1) +"분기 평균: "+ temparr[i])
 
-    temp =0 ;
+    sum = 0;
     if(tempavg<temparr[i]){
         tempavg = temparr[i]
     }
