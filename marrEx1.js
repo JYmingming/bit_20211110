@@ -13,8 +13,8 @@ const arr = [
 //각 분기별 매출 평균을 만든다
 //그 중에서 최대 평균을 찾는다.
 
+
 let temp = 0
-let avg = 0
 const temparr= []
 let tempavg = -1
 for (let i = 0; i < arr.length; i++) {
@@ -24,14 +24,12 @@ for (let i = 0; i < arr.length; i++) {
         
     }
     temparr[i] = temp/arr[i].length
-
     console.log((i+1) +"분기 평균: "+ temparr[i])
-
 
     temp =0 ;
     if(tempavg<temparr[i]){
         tempavg = temparr[i]
     }
-
 }
+
 console.log("최대 매출분기는: "+ temparr.indexOf(tempavg)+"분기 입니다.")
