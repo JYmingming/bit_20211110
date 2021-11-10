@@ -32,4 +32,4 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
-console.log("최대 매출분기는: "+ temparr.indexOf(tempavg)+"분기 입니다.")
+console.log("최대 매출분기는: "+ (temparr.indexOf(tempavg)+1)+"분기 입니다.")
