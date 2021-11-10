@@ -30,14 +30,6 @@ for(let i =0; i < arr. length ; i++){
     }
 }
 console.log(max)
-let temp = arr[0]
 
-for (let i=0; i< arr.length; i++){
-    const score =arr[i]
 
-    if(score>temp){
-        temp = score
-    }
-}
-console.log(temp
-)
+
